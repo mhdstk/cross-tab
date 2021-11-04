@@ -20,7 +20,7 @@
         <div class="row">
             <div class="col-6">
                 <input type="text" name="text" id="text" class="form-control">
-                <button type="submit" class="btn btn-primary mt-1" onclick="fun()">Save</button>
+                <button type="submit" class="btn btn-primary mt-1" onclick="trigger()">Save</button>
             </div>
             <div class="col-6">
                 <p id="string_display"></p>
@@ -30,7 +30,7 @@
 </body>
 <script>
     var bc = new BroadcastChannel("cross-tab");
-    function fun() {
+    function trigger() {
         // Taking input value 
         const val = document.querySelector('input').value;
 
